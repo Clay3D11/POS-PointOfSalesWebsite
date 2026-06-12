@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern point of sale website for retail, restaurants, service businesses, inventory, payments, staff, and analytics."
+    />
+    <title>ClainerPOS | Point of Sale System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="ClainerPOS home">
+        <span class="brand-mark">CP</span>
+        <span>ClainerPOS</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+        <a href="#platform">Platform</a>
+        <a href="#industries">Industries</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#contact">Book demo</a>
+    </header>
+
+    <main id="home">
+      <section class="hero-section">
+        <div class="hero-content">
+          <p class="eyebrow">Point of sale, inventory, staff, and reports</p>
+          <h1>Run every sale, shift, and store from one modern POS.</h1>
+          <p>
+            A frontend showcase for a fast retail and restaurant POS business, built to present payments,
+            orders, inventory, customer profiles, analytics, and multi-location growth.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Schedule a demo</a>
+            <a class="button secondary" href="#platform">Explore platform</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Business metrics">
+            <div>
+              <dt>99.9%</dt>
+              <dd>checkout uptime</dd>
+            </div>
+            <div>
+              <dt>24/7</dt>
+              <dd>store visibility</dd>
+            </div>
+            <div>
+              <dt>3 min</dt>
+              <dd>staff onboarding</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-label="Point of sale dashboard preview">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <div>
+                <small>Today's revenue</small>
+                <strong>$18,420</strong>
+                <em>+18.6%</em>
+              </div>
+              <div class="sales-chart" aria-hidden="true">
+                <span style="height: 48%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 42%"></span>
+                <span style="height: 78%"></span>
+                <span style="height: 56%"></span>
+                <span style="height: 88%"></span>
+                <span style="height: 72%"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pos-device">
+            <div class="device-top">
+              <span>Register 01</span>
+              <strong>Live Order</strong>
+            </div>
+            <div class="product-grid">
+              <button type="button">Latte</button>
+              <button type="button">Bagel</button>
+              <button type="button">Salad</button>
+              <button type="button">Juice</button>
+              <button type="button">Combo</button>
+              <button type="button">Gift Card</button>
+            </div>
+            <div class="cart-preview">
+              <div><span>Subtotal</span><strong>$42.80</strong></div>
+              <div><span>Tax</span><strong>$3.74</strong></div>
+              <div><span>Total</span><strong>$46.54</strong></div>
+            </div>
+            <button class="pay-button" type="button">Tap, chip, cash, or invoice</button>
+          </div>
+
+          <div class="floating-card stock-card">
+            <span>Low stock alert</span>
+            <strong>12 items need reorder</strong>
+          </div>
+          <div class="floating-card sync-card">
+            <span>Cloud sync</span>
+            <strong>All locations updated</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-band" aria-label="Supported business types">
+        <span>Retail</span>
+        <span>Restaurants</span>
+        <span>Barbershops</span>
+        <span>Gyms</span>
+        <span>Markets</span>
+      </section>
+
+      <section class="section platform-section" id="platform">
+        <div class="section-heading">
+          <p class="eyebrow">Platform</p>
+          <h2>Everything your counter, floor, and back office need.</h2>
+          <p>
+            Build a smoother sales experience with the core tools businesses expect from a serious POS.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Fast checkout</h3>
+            <p>Search products, add modifiers, split payments, apply discounts, and close sales quickly.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Inventory control</h3>
+            <p>Track stock levels, suppliers, variants, purchase orders, and automated reorder points.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Customer profiles</h3>
+            <p>Save purchase history, loyalty rewards, store credit, contact details, and visit notes.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Staff permissions</h3>
+            <p>Control roles, register access, refunds, time clock, tips, commissions, and shift reports.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Multi-location</h3>
+            <p>Compare stores, sync menus and catalogs, transfer inventory, and manage location rules.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon-dot"></span>
+            <h3>Payments ready</h3>
+            <p>Present a polished payment flow for card, cash, digital wallet, invoice, and deposit use cases.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Daily workflow</p>
+          <h2>Built around how real businesses move.</h2>
+        </div>
+
+        <div class="workflow">
+          <article>
+            <span>01</span>
+            <h3>Open the shift</h3>
+            <p>Staff log in, count cash drawers, check alerts, and prepare registers.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Sell with speed</h3>
+            <p>Tap items, scan barcodes, customize orders, and accept payment.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Track the floor</h3>
+            <p>Monitor orders, tables, pickup status, stock movement, and staff activity.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Close with clarity</h3>
+            <p>Review sales, tips, taxes, refunds, cash variance, and next-day tasks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section industries-section" id="industries">
+        <div class="section-heading">
+          <p class="eyebrow">Industries</p>
+          <h2>One POS presentation for many business types.</h2>
+          <p>Select an industry to preview the feature set that matters most.</p>
+        </div>
+
+        <div class="industry-tabs" role="tablist" aria-label="Industry demos">
+          <button class="active" type="button" role="tab" aria-selected="true" data-tab="retail">Retail</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="restaurant">Restaurant</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="service">Service</button>
+        </div>
+
+        <div class="industry-panel" data-panel>
+          <div>
+            <p class="eyebrow">Retail mode</p>
+            <h3>Inventory, barcode checkout, purchase orders, and customer rewards.</h3>
+            <p>
+              Create a clean sales story for boutiques, markets, convenience stores, beauty supply shops,
+              and growing retail brands.
+            </p>
+          </div>
+          <ul>
+            <li>Barcode-ready product lookup</li>
+            <li>Variants, categories, and vendor tracking</li>
+            <li>Returns, exchanges, and loyalty credit</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section analytics-section" id="analytics">
+        <div class="analytics-copy">
+          <p class="eyebrow">Analytics</p>
+          <h2>Know what is selling, who is working, and where profit is moving.</h2>
+          <p>
+            Give your POS business a premium analytics story with live sales, category trends, customer
+            retention, employee performance, and inventory forecasting.
+          </p>
+          <a class="button secondary" href="#contact">Talk about analytics</a>
+        </div>
+
+        <div class="analytics-board">
+          <div class="board-card wide">
+            <span>Net sales</span>
+            <strong>$84.2k</strong>
+            <div class="line-chart" aria-hidden="true"></div>
+          </div>
+          <div class="board-card">
+            <span>Avg order</span>
+            <strong>$37.90</strong>
+            <small>+9.4%</small>
+          </div>
+          <div class="board-card">
+            <span>Top category</span>
+            <strong>Prepared Food</strong>
+            <small>31% of sales</small>
+          </div>
+          <div class="board-card">
+            <span>Labor ratio</span>
+            <strong>18.2%</strong>
+            <small>Healthy</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section calculator-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">ROI calculator</p>
+          <h2>Show the value of better checkout speed.</h2>
+        </div>
+
+        <div class="calculator">
+          <div class="range-group">
+            <label for="transactions">Daily transactions <span data-transactions-value>180</span></label>
+            <input id="transactions" type="range" min="25" max="800" value="180" step="5" data-transactions />
+          </div>
+          <div class="range-group">
+            <label for="minutes">Minutes saved per sale <span data-minutes-value>1.5</span></label>
+            <input id="minutes" type="range" min="0.5" max="5" value="1.5" step="0.5" data-minutes />
+          </div>
+          <div class="calculator-result">
+            <span>Estimated time saved per month</span>
+            <strong data-savings>135 hours</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="pricing">
+        <div class="section-heading">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple packages for launch, growth, and multi-location teams.</h2>
+          <p>Use the billing switch to preview monthly or annual positioning.</p>
+        </div>
+
+        <div class="billing-toggle" aria-label="Billing cycle">
+          <button class="active" type="button" data-billing="monthly">Monthly</button>
+          <button type="button" data-billing="annual">Annual</button>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+            <p>For a single counter or small mobile business.</p>
+            <strong><span data-price="49">$49</span><small>/mo</small></strong>
+            <ul>
+              <li>1 register</li>
+              <li>Basic inventory</li>
+              <li>Sales reports</li>
+              <li>Email support</li>
+            </ul>
+            <a class="button secondary" href="#contact">Start</a>
+          </article>
+          <article class="price-card featured">
+            <span class="popular">Most popular</span>
+            <h3>Growth</h3>
+            <p>For busy stores that need staff, loyalty, and analytics.</p>
+            <strong><span data-price="99">$99</span><small>/mo</small></strong>
+            <ul>
+              <li>3 registers</li>
+              <li>Advanced inventory</li>
+              <li>Loyalty and customers</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="button primary" href="#contact">Book demo</a>
+          </article>
+          <article class="price-card">
+            <h3>Enterprise</h3>
+            <p>For multi-location operators and custom workflows.</p>
+            <strong><span data-price="199">$199</span><small>/mo</small></strong>
+            <ul>
+              <li>Unlimited locations</li>
+              <li>Custom permissions</li>
+              <li>Data exports</li>
+              <li>Launch support</li>
+            </ul>
+            <a class="button secondary" href="#contact">Contact</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions your customers will ask first.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Can this POS support restaurants and retail?</button>
+            <p hidden>Yes. The website presents flexible workflows for product sales, modifiers, tables, services, inventory, staff, and analytics.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Is this frontend ready for GitHub Pages?</button>
+            <p hidden>Yes. It is plain HTML, CSS, and JavaScript with no backend, no install step, and no build process.</p>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">Can the contact form work without a server?</button>
+            <p hidden>Yes. The form opens the visitor's email app with the request details already filled in.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Ready to present your POS business online?</h2>
+            <p>
+              Send a demo request, business question, or project inquiry. The form works on static hosting
+              through email.
+            </p>
+          </div>
+
+          <form class="contact-form" data-contact-form>
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Business type
+              <select name="business" required>
+                <option value="">Choose one</option>
+                <option>Retail</option>
+                <option>Restaurant</option>
+                <option>Barbershop or salon</option>
+                <option>Gym or service business</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me what you want this POS website to do." required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send request</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#home" aria-label="Back to top">
+        <span class="brand-mark">CP</span>
+        <span>ClainerPOS</span>
+      </a>
+      <p>Frontend-only POS business website, ready for GitHub Pages.</p>
+      <div>
+        <a href="#platform">Platform</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
