@@ -126,15 +126,34 @@ $$(".faq-item button").forEach((button) => {
   });
 });
 
-contactForm?.addEventListener("submit", (event) => {
+contactForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
+  const submitButton = $("button[type='submit']", contactForm);
+  const formStatus = $(".form-status", contactForm);
+  const originalButtonText = submitButton.textContent;
 
-  const data = Object.fromEntries(new FormData(contactForm));
-  const subject = encodeURIComponent("ClainerPOS demo request");
-  const body = encodeURIComponent(
-    `Name: ${data.name || ""}\nEmail: ${data.email || ""}\nBusiness type: ${data.business || ""}\n\n${data.message || ""}`
-  );
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending...";
+  formStatus.textContent = "Sending your request...";
 
-  window.location.href = `mailto:v.clainer11@gmail.com?subject=${subject}&body=${body}`;
-  $(".form-status", contactForm).textContent = "Opening your email app...";
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: new FormData(contactForm),
+      headers: { Accept: "application/json" },
+    });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || "Your request could not be sent.");
+    }
+
+    contactForm.reset();
+    formStatus.textContent = "Request sent! I'll get back to you soon.";
+  } catch (error) {
+    formStatus.textContent = `${error.message} Please try again.`;
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = originalButtonText;
+  }
 });
