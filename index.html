@@ -774,7 +774,15 @@
             </p>
           </div>
 
-          <form class="contact-form" data-contact-form>
+          <form
+            class="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            data-contact-form
+          >
+            <input type="hidden" name="access_key" value="bdadfbc7-884d-4579-ac6b-cfbb42e64705" />
+            <input type="hidden" name="subject" value="New Limitless POS inquiry" />
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" hidden />
             <label>
               Name
               <input name="name" type="text" autocomplete="name" required />
