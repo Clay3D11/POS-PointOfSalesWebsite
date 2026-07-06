@@ -21,7 +21,7 @@ Frontend-only POS business website built with HTML, CSS, and JavaScript.
 If you want to use a custom domain, add a `CNAME` file with only the domain name inside, for example:
 
 ```txt
-clainerdev.com
+LimitlessPOS.co
 ```
 
 Then add the same domain in `Settings > Pages > Custom domain`.
